@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+</head>
+<body style="background-color: rgba(0, 195, 255, 0.966); font-style: normal; font-size: medium;">
+    <header>
+        <h1 style="color: white; text-align: center;">Welcome to my Simple Website!.</h1>
+        <p>This is a basic HTML-only website.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2 style="color: white; text-align: left;">Home</h2>
+        <p>This is the home section of the website.</p>
+    </section>
+    <section id="about">
+        <h2 style="color: white;">About</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adeleke</td>
+                    <td>25</td>
+                    <td>Nigeria</td>
+                </tr>
+            </tbody>
+        </table><br>
+        <img style="width: 300px ; height: 200px;"  src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/no01850-tesla-cybertruck-lavender-innovation-and-bold-design-in-electric-truck-clark-leffler.jpg" alt=" #1 print"><br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u-cmpTRWAE8?si=84vUon5YIcJKy8jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>This section provide infomation about the website and it's purpose.</p>
+    </section>
+    <section id="contact">
+        <h2 style="color: white;">Contact</h2>
+        <p>Get in touch through our contact infomation</p>
+    </section>
+    <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email"><br>
+        <label for="password">Password</label><br>
+        <input type="text" id="password"><br>
+        <input type="submit"><br>
+    </form>
+    <footer>
+        <p>&copy; 2025 simple website, All rights reseverd.</p>
+    </footer>
+    <form>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50">
+          Enter your message here...
+        </textarea>
+      </form>
+        <template id="myTemplate">
+  <div>
+    <p>This is a template content!</p>
+  </div>
+</template>
+
+<script>
+  const template = document.getElementById('myTemplate');
+  const clone = document.importNode(template.content, true);
+  document.body.appendChild(clone);
+</script>
+
+</body>
+</html>
